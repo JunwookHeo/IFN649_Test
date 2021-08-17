@@ -12,7 +12,7 @@ else
 fi
 
 echo "Installing mosquitto"
-sudo yum -y install mosquitto
+sudo yum install -y mosquitto
 if [ $? -eq 0 ]
 then
     echo "Installation success"
