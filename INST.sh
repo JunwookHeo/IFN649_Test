@@ -19,3 +19,13 @@ then
 else
     echo "Installation error"
 fi
+
+# Check installation
+mos=$(mosquitto -h)
+echo $mos
+if [[ $mos == *"mosquitto version"* ]]
+then
+    echo "mosquitto installed"
+else
+    echo "mosquitto not installed"
+fi
