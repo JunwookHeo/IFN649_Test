@@ -22,7 +22,7 @@ fi
 
 # Check installation
 mos=$(mosquitto -h)
-echo $mos
+echo "Checking mosquitto installation"
 if [[ $mos == *"mosquitto version"* ]]
 then
     echo "mosquitto installed"
